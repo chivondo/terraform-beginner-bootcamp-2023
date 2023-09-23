@@ -12,3 +12,18 @@ Given a version number **MAJOR.MINOR.PATCH**, eg. `1.0.1`
 - **MINOR** version when you add functionality in a backward compatible manner
 - **PATCH** version when you make backward compatible bug fixes
 Additional labels for pre-release and build metadata are available as extensions to the MAJOR.MINOR.PATCH format.
+
+## Install the Terraform CLI
+
+### Considerations
+Terraform CLI installation instrutions have changed due to gpg keyring change. Refer to the latest intall CLI
+
+[Install Terraform CLI](https://developer.hashicorp.com/terraform/tutorials/aws-get-started/install-cli)
+
+
+### Refactoring into bash scripts
+
+- Using Bash script for the Terraform CLI because of the need of a lot of commands.
+- Keep the Gitpod Task File ([/gitpod.yml])
+https://en.wikipedia.org/wiki/Shebang_(Unix)
+https://www.gitpod.io/docs/configure/workspaces/tasks
