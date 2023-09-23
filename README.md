@@ -27,3 +27,14 @@ Terraform CLI installation instrutions have changed due to gpg keyring change. R
 - Keep the Gitpod Task File ([/gitpod.yml])
 https://en.wikipedia.org/wiki/Shebang_(Unix)
 https://www.gitpod.io/docs/configure/workspaces/tasks
+
+
+### Working ENV vars
+
+We can list out all Environment Variables (Env vars) using the `env` command
+
+We can filter specfici env vars using grep eg. `env | grep `
+
+#### Setting and Unsetting Env vars
+
+In the terminal we can set using `export Hello world`
