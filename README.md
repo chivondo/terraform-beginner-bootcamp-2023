@@ -43,3 +43,10 @@ In the terminal we can set using `export Hello world`
 ### Refactor CLI 
 
 `aws sts get-caller-identity`
+
+
+### Terraform Random provider
+
+#### Terraform Init
+
+#### Terraform Plan
