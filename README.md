@@ -38,3 +38,8 @@ We can filter specfici env vars using grep eg. `env | grep `
 #### Setting and Unsetting Env vars
 
 In the terminal we can set using `export Hello world`
+
+
+### Refactor CLI 
+
+`aws sts get-caller-identity`
