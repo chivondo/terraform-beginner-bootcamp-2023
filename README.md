@@ -84,4 +84,5 @@ Provide the following code (replace token in file)
 }       
 ```
 
+We have automated the Terraform Login process using the following bash script [bin/generate_tfrc_credentials](bin/generate_tfrc_credentials)
 
