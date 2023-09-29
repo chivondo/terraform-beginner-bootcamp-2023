@@ -50,3 +50,13 @@ In the terminal we can set using `export Hello world`
 #### Terraform Init
 
 #### Terraform Plan
+
+#### Terraform Apply
+
+#### Terraform Destroy
+This destroys resources
+`terraform destroy`
+
+Use flag `--auto approve` to dont get the prompt
+
+
