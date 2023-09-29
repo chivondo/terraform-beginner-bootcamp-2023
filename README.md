@@ -57,6 +57,31 @@ In the terminal we can set using `export Hello world`
 This destroys resources
 `terraform destroy`
 
-Use flag `--auto approve` to dont get the prompt
+Use flag `--auto-approve` to dont get the prompt
+
+## Issues with Terraform Cloud Login and Gitpod Workspace
+
+When attempting to run `terraform login` it will launch in bash a bad view/UI to generate token. It does not work as expected.
+
+As a workaround ; generate a token:
+https://app.terraform.io/app/settings/tokens?source=terraform
+
+Open the file manually 
+```sh
+touch home/gitpod/.terraform.d/credentials.tfrc.json
+open home/gitpod/.terraform.d/credentials.tfrc.json
+```
+
+Provide the following code (replace token in file)
+
+```json
+{
+    "credentials": {
+        "app.terraform.io": {
+            "token": "your_api_token_here"
+        }
+    }
+}       
+```
 
 
