@@ -81,4 +81,10 @@ LLMs might not be trained on the latest documentation by terraform.
 
 - path.module
 - path.root
+## Terraform locals
+https://developer.hashicorp.com/terraform/language/values/locals
+## Terraform data sources
 
+## Working with JSON
+
+`jasonencode`
