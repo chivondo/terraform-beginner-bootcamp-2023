@@ -88,3 +88,9 @@ https://developer.hashicorp.com/terraform/language/values/locals
 ## Working with JSON
 
 `jasonencode`
+
+### Chaging lifecycle of Resources
+
+## Terraform data
+
+
