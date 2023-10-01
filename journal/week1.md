@@ -16,3 +16,23 @@ PROJECT_ROOT
 
 [Standard Module Structure](https://developer.hashicorp.com/terraform/language/modules/develop/structure)
 
+## Terraform Variable
+### Terraform CLoud Variables
+
+In terraform we can set two kind of variables
+- Environment Variables
+- Terraform 
+
+We can set Terraform Cloud variables to be sensitive
+
+### Loading Terraform input Variables
+
+### var flag
+
+### var-file flag
+
+### terraform.tfvars
+
+### auto.tfvars
+
+### order of terraform variables
