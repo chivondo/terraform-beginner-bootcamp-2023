@@ -53,3 +53,15 @@ It won't work for all cloud resources
 If someone goes and delete or modifies cloud resource manually through ClickOps
 
 If we run Terraform plan is with attempt to put our infrastructure back into expected state fixing configuration drift
+
+### fix using terraform refresh
+
+## Terraform Modules
+
+### Terraform Module Structure
+
+## Passing Input Variables
+
+### Modules Sources
+
+Using the source we can import the module from various places
