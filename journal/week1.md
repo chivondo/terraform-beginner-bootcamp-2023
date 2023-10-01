@@ -36,3 +36,20 @@ We can set Terraform Cloud variables to be sensitive
 ### auto.tfvars
 
 ### order of terraform variables
+
+## Dealing with Configurations drift
+
+### What ahppens if we lose our state file
+You most likely have to tear down all your cloud infrastructure manually.
+It won't work for all cloud resources
+
+### Terraform import
+
+### Fix missing resource with Terraform import
+`terraform import aws_s3_bucket.example`
+
+### Fix manual configuration
+
+If someone goes and delete or modifies cloud resource manually through ClickOps
+
+If we run Terraform plan is with attempt to put our infrastructure back into expected state fixing configuration drift
