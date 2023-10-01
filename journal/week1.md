@@ -65,3 +65,20 @@ If we run Terraform plan is with attempt to put our infrastructure back into exp
 ### Modules Sources
 
 Using the source we can import the module from various places
+
+## Consideration when using ChatGPT to write Terraform
+
+LLMs might not be trained on the latest documentation by terraform.
+
+## working with files in Terraform
+
+### Fileexists function
+
+### Filemd5
+
+
+### Path variable
+
+- path.module
+- path.root
+
