@@ -1,11 +1,10 @@
 terraform {
-#   cloud {
-#     organization = "Chivo"
-# # 
-#     workspaces {
-#       name = "terra-house-1"
-#     }
-#   }
+  cloud {
+    organization = "Chivo"
+    workspaces {
+      name = "terraform-cloud"
+    }
+  }
   
  
 }
