@@ -107,3 +107,12 @@ This will execute a command on the machine running the terraform commands eg. pl
 
 This will execute commands on a machine which you target. You will need to provide credentials such as ssh to get into the machine.
 
+
+## For Each Expressions
+
+Allows us to enumerate over complex data types
+
+Mostly useful when you are creating multiples of cloud resource and you want to reduce the amount of repetitive terraform
+
+[For each](https://developer.hashicorp.com/terraform/language/meta-arguments/for_each)
+
