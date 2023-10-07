@@ -33,6 +33,7 @@ resource "aws_s3_object" "index_html" {
   # etag = "${md5(file("path/to/file"))}"
   etag = filemd5(var.index_html_filepath)
   lifecycle {
+    replace_triggered_by = [ terraform_data.content_version.output ]
     ignore_changes = [ etag ]
   }
 }
