@@ -93,4 +93,17 @@ https://developer.hashicorp.com/terraform/language/values/locals
 
 ## Terraform data
 
+## Provisioners
+
+Provisioners allow you to execute commands on compute instances eg. A AWS CLI command
+
+They are not recommended for use by Hashicorp because Config Management tools such as Ansible are better fit. But the functionality exits.
+
+### Local-exec
+
+This will execute a command on the machine running the terraform commands eg. plan apply
+
+### Remote-exec
+
+This will execute commands on a machine which you target. You will need to provide credentials such as ssh to get into the machine.
 
