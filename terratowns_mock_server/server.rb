@@ -3,13 +3,23 @@ require 'json'
 require 'pry'
 require 'active_model'
 
+#We will mock having a state or database for this dev server
+#By setting a global variable. You would never use a global variable
+#Prod server
 $home = {}
 
+#
 class Home
   include ActiveModel::Validations
   attr_accessor :town, :name, :description, :domain_name, :content_version
 
-  validates :town, presence: true
+  validates :town, presence: true, inclusion: { in: [
+    'cooker-cove',
+    'melomaniac-mansion',
+    'video-valley',
+    'the-nomad-pad',
+    'gamers-grotto'
+  ] }
   validates :name, presence: true
   validates :description, presence: true
   validates :domain_name, 
