@@ -123,6 +123,7 @@ func Resource() *schema.Resource {
 				Description: "The content version of the home",
 			},
 		},
+
 	 }
 	log.Print("Resource:end")
 	return resource
@@ -191,7 +192,6 @@ func resourceHouseCreate(ctx context.Context, d *schema.ResourceData, m interfac
 func resourceHouseRead(ctx context.Context, d *schema.ResourceData, m interface{}) diag.Diagnostics {
 	log.Print("resourceHouseRead:start")
 	var diags diag.Diagnostics
-
 	config := m.(*Config)
 
 	homeUUID := d.Id()
