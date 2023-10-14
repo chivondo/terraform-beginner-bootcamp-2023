@@ -158,21 +158,21 @@ class TerraTownsMockServer < Sinatra::Base
     # Validate payload data
     name = payload["name"]
     description = payload["description"]
-    domain_name = payload["domain_name"]
     content_version = payload["content_version"]
 
     unless params[:uuid] == $home[:uuid]
       error 404, "failed to find home with provided uuid and bearer token"
     end
-
+# Create a new home model and set to attributes
     home = Home.new
     home.town = $home[:town]
+    home.domain_name = $home[:domain_name]
     home.name = name
     home.description = description
-    home.domain_name = domain_name
     home.content_version = content_version
-
+# ensure our validation check pass otherwise return errors
     unless home.valid?
+      # return errors message back json
       error 422, home.errors.messages.to_json
     end
 
@@ -184,14 +184,18 @@ class TerraTownsMockServer < Sinatra::Base
     ensure_correct_headings
     find_user_by_bearer_token
     puts "# delete - DELETE /api/homes/:uuid"
+
+    # will mock our data to our mock database
     content_type :json
 
     if params[:uuid] != $home[:uuid]
       error 404, "failed to find home with provided uuid and bearer token"
     end
 
+ #delete from mock database
+    uuid= $home[:uuid]
     $home = {}
-    { message: "House deleted successfully" }.to_json
+    { uuid: uuid }.to_json
   end
 end
 
