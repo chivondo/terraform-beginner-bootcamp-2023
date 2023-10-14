@@ -36,4 +36,7 @@ You can create a web-server ina  single file.
 ### Running the web server
 
 
+## CRUD
+
+Terraform Providers uses CRUD. Stands for Create , Read, Update, Delete
 
