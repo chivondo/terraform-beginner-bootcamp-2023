@@ -5,13 +5,13 @@ terraform {
       version = "1.0.0"
     }
   }
-#   cloud {
-#     organization = "Chivo"
-# # 
-#     workspaces {
-#       name = "terra-house-1"
-#     }
-#   }
+  cloud {
+    organization = "Chivo"
+# 
+    workspaces {
+      name = "terra-house-1"
+    }
+  }
   
  
 }
@@ -40,3 +40,4 @@ Any description you want
   content_version = 1
   
 }
+
